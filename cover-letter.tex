@@ -1,98 +1,105 @@
 \documentclass[12pt]{extarticle}
-\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.0cm, left=3cm, right=3cm]{geometry}
 %
 \input{preamble/general}
 \setmainfont{Lato}
 \author{Michael Reichmann}
 %
-%! region PERSONAL INFO CH
-\phone{+49 178 1988015}
+% region PERSONAL INFO CH
+% \phone{+49 178 1988015}
+% \email{micha.reichmann@gmail.com}
+% \street{Forchstrasse 151}
+% \address{8032 Zürich}
+% \date{Zürich, \today}
+% endregion
+%
+% region PERSONAL INFO PL
+% \phone{+48\,797575242}
 \email{micha.reichmann@gmail.com}
-\street{Forchstrasse 151}
-\address{8032 Zürich}
-\date{Zürich, \today}
-%! endregion
+\street{Aleja Lipowa 22/9}
+\address{53-124 Wrocław}
+\date{Wrocław, \today}
+% endregion
 %
-%! region PERSONAL INFO PL
-%\phone{797575242}
-%\email{micha.reichmann@gmail.com}
-%\street{Lipowa 22/9}
-%\address{53-124 Wrocław}
-%\date{Wrocław, \today}
-%! endregion
+% region PERSONAL INFO DE
+\phone{+49\,178\,1988015}
+% \email{micha.reichmann@gmail.com}
+% \street{Eichelbach 26}
+% \address{98574 Schmalkalden}
+% \date{Schmalkalden, \today}
+% endregion
 %
-%! region COMPANY INFO
-\company{Geopraevent AG}
-\compstreet{Räffelstrasse 28}
-\compaddress{8045 Zürich}
+% region COMPANY INFO
+\company{Wandelbots}
+\compstreet{Rayskistraße 25}
+\compaddress{01219 Dresden}
 \oldcomp{ETH Zürich}
-\position{Test Automation Engineer}
-\positionshort{Test Automation Engineer}
-%! endregion
+\position{Software Engineer Business Acceleration}
+\positionshort{Software Engineer Business Acceleration}
+% endregion
 % --------------------------------------------------------------------------
 \begin{document}
 %
-%! region TITLE
+% region TITLE
 \maketitle % address lines
-\tikz[remember picture,overlay,blend mode = multiply] \node[inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{figures/bkg1}};
-%! endregion
+\bkgimg{bkg1}
+% endregion
 %
-%! region OPENING
+% region OPENING
 %
 %! Expressing your interest in the position.
 %! how I heard about the job (online job posting, company website, referral, etc.).
 %
-Dear Hiring Manager,\par
+Sehr geehrte Damen und Herren,\par
 %
-I'm extremely excited to be applying to the \@position position at \@company.
-\@company was highly recommended to me and I found this job offering directly on the company's website.
-I'm thrilled to have the opportunity to offer my talents to \@company, a world leader in the telecommunication business.\par
-%! endregion
+Mit großem Interesse bewerbe ich mich bei \@company für die Position als \@position.
+\@company wurde mir wärmstens empfohlen und ich habe die Offerte direkt auf der Firmenwebseite gefunden.
+Ich freue mich sehr die Möglichkeit zu haben meine Talente \@company anzubieten, einem modernen Software StartUp dass sich auf die Interaktion von Mensch 
+\& Roboter fokussiert.\par
+% endregion
 %
-%! region FIRST BODY (Optional)
+% region FIRST BODY (Optional)
 %
 %! Why am I a good fit for the position?
 %! highlight a few key qualifications or experiences that make you a strong candidate.
 %! Connect your skills and experiences to the specific requirements of the job.
 %
-
-With my object orientated programming and scripting skills in python in addition to my physics background, I am going to excel at your company.
-As a highly analytical individual, I aim to always make rational and objective observations about the world around me.
-Therefore, I am very talented in identifying and solving problems with out-of-the-box thinking.\par
-%! endregion
+Mit meinen objekt-orientierten Programmierkenntnissen in python und meinem\linebreak Physikwissen passe ich hervorragend zu Ihrer Firma. 
+Als eine hochanalytische Person strebe ich danach rationale und objektive Entscheidungen zu treffen.
+Daher bin ich sehr talentiert darin Probleme zu identifizieren und mit out-of-the-box Ansätzen zu lösen.\par
+% endregion
 %
-%! region SECOND BODY PARAGRAPH (optional)
+% region SECOND BODY PARAGRAPH (optional)
 %
 %! Provide more details on your relevant experiences and achievements.
 %! Give specific examples of how your skills have contributed to your previous employers or projects.
 %
-While working in my previous role at \@oldcomp, I developed a setup to evaluate future detectors for the Large Hadron Collider.
-In this position I was responsible for several measurement campaigns leading and organising a small team to successful research.
-I strongly value the beauty and power of Linux, which I'm using for both my work and my private life.\par
-%! endregion
+Bei meiner vorigen Rolle bei der \@oldcomp habe ich ein Setup entwickelt um neuartige Detektoren for den Large Hadron Collider zu testen.
+Dabei war ich sowohl für die Leitung des Teams während der Testkampagnien als auch für einen grossen Teil der Softwareentwicklung sowohl für des Testsetup also auch für die Analyse zuständig.
+Durch die Arbeit in einer grossen Kollaboration an Wissenschaftlern hab ich die Teamarbeit und den Austausch von Ideen sehr zu schätzen gelernt.\par
+% endregion
 %
-%! region THIRD BODY PARAGRAPH (optional)
+% region THIRD BODY PARAGRAPH (optional)
 %
 %! Discuss any additional qualifications or experiences that make you stand out.
 %! Show your enthusiasm for the company and its mission.
 %
-While at \@oldcomp, I was able to acquire many new skills and developed myself on a great scale.
-Writing software for instrumentation, data-acquisition and data analysis, I learned many things about programming, networks, versioning control systems and a lot of other things.
-In general, I'm very eager and motivated to learn new things.\par
-%! endregion
+Während meiner Zeit an der \@oldcomp habe ich viele neue Fähigkeiten, u.\,a. Netzwerke und Versionsverwaltung, erlernt und konnte mich enorm weiterentwickeln.
+Ich bin sehr wissbegierig und scheue mich vor keiner neuen Herausforderung.
+Daher danke ich, passt die Philosophie von \@company hervorragend zu mir und das Unternehmen ermöglicht es mir meine Fähigkeiten für spannende Projekte zu nutzen.\par
+% endregion
 %
-%! region CLOSING
+% region CLOSING
 %
 %! Express your eagerness for an interview and provide your contact information.
 %! Thank the employer for considering your application.
 %
-I'm grateful for this opportunity, and thank you for considering my application.
-I'm looking forward to learning more details about the \@positionshort position and \@company as a whole.
-I'm a committed individual looking to join a goal-oriented team, and I feel that \@company offers me an environment where I can apply my skills on worthy projects.\par
-%! endregion
+Vielen Dank für Ihre Zeit und die Möglichkeit mich vorzustellen.
+Ich freue mich sehr mehr über die Position als \@positionshort und über das Unternehmen \@company als Ganzes zu erfahren.
+Für weitere Fragen stehe ich Ihnen gerne zur Verfügung und freue mich darauf, von Ihnen zu hören.\par
+% endregion
 %
-Sincerely,\par
-
+Mit freundlichem Gruß,\par
 %
 \@author
 %
