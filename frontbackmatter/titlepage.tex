@@ -1,0 +1,27 @@
+\makeatletter
+
+\renewcommand*{\maketitle}{
+\begin{titlepage}
+%
+  \vspace*{-13ex}
+  \raggedright
+  \LARGE{\MakeUppercase{\@author}}\\[3.5ex]
+  %
+  \normalsize\raggedleft
+  \@author \strut\\
+  \@street  \strut\\
+  \@address  \strut\\
+  \@phone  \strut\\
+  \href{mailto:\@email}{\@email} \strut\par
+  %
+  \raggedright
+  \@company     \strut\\
+  \@compstreet  \strut\\
+  \@compaddress \strut\\
+  %
+  \raggedleft
+  \@date \strut\par\vspace*{.5em}\noindent
+  \hspace{-1ex}
+%
+\end{titlepage}}
+

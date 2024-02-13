@@ -1,0 +1,28 @@
+% ---------------- GENERAL PREAMBLE SETTINGS ------------------------------------------
+\makeatletter
+\newcommand*{\phone}[1]{\gdef\@phone{#1}}\newcommand*{\@phone}{+41 76 1234123}
+\newcommand*{\email}[1]{\gdef\@email{#1}}\newcommand*{\@email}{bla@bla.com}
+\newcommand*{\address}[1]{\gdef\@address{#1}}\newcommand*{\@address}{12345 Musterstadt}
+\newcommand*{\street}[1]{\gdef\@street{#1}}\newcommand*{\@street}{Musterstrasse 14}
+\newcommand*{\company}[1]{\gdef\@company{#1\xspace}}\newcommand*{\@company}{SPEAG}
+\newcommand*{\oldcomp}[1]{\gdef\@oldcomp{#1\xspace}}\newcommand*{\@oldcomp}{ETH Z\"urich}
+\newcommand*{\position}[1]{\gdef\@position{#1\xspace}}\newcommand*{\@position}{Software Engineer}
+\newcommand*{\positionshort}[1]{\gdef\@positionshort{#1\xspace}}\newcommand*{\@positionshort}{Software Engineer}
+\newcommand*{\compstreet}[1]{\gdef\@compstreet{#1}}\newcommand*{\@compstreet}{bla@bla.com}
+\newcommand*{\compaddress}[1]{\gdef\@compaddress{#1}}\newcommand*{\@compaddress}{bla@bla.com}
+\makeatother
+
+\input{preamble/packages}
+\input{preamble/commands}
+
+\newcommand{\thickhrulefill}{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+
+\newfontfamily\ubuntu{Ubuntu}
+\newfontfamily\dejavu{DejaVuSans}
+
+\setlength{\parskip}{1em}
+% \setlength{\headheight}{14pt}
+% \pagestyle{fancy}
+
+\let\endtitlepage\relax
+\input{frontbackmatter/titlepage}
